@@ -9,7 +9,7 @@ char *builtin_str[] = {"exit"};
 
 int (*builtin_func[])(char **) = {&lsh_exit};
 
-/**ls
+/**
  *
  * lsh_num_builtins - size
  * Return: size
