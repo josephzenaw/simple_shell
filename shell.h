@@ -38,7 +38,6 @@ char **tokenize(char *lineptr);
 
 void _exit_command(char **args, char *lineptr, int _exit);
 
-int _fork_fun(char **arg, char **av, char **env,
-              char *lineptr, int np, int c);
+int _fork_fun(char **arg, char **av, char **env, char *lineptr, int np, int c);
 
 #endif /* SHELL_H */
