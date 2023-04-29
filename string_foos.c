@@ -1,15 +1,13 @@
 #include "shell.h"
 
 /**
- * _strcat - ncatenates two strings
+ * _strcat - concatenates two strings
  *
  * @dest: Destination string
  *
  * @src: Origin string
  * Return: Always 0
  */
-
-
 
 char *_strcat(char *dest, char *src)
 {
@@ -22,13 +20,10 @@ char *_strcat(char *dest, char *src)
 	{
 		dest[i] = src[j];
 		i++;
-
 	}
 	dest[i] = '\0';
-return (dest);
+	return (dest);
 }
-
-
 
 /**
  * _strcmp - Compares two strings
@@ -47,9 +42,8 @@ int _strcmp(char *s1, char *s2)
 
 	while (s1[i] != 0 && s2[i] != 0 && s1[i] == s2[i])
 		i++;
-val = s1[i] - s2[i];
-return (val);
-
+	val = s1[i] - s2[i];
+	return (val);
 }
 
 /**
@@ -73,7 +67,7 @@ int _strlen(char *s)
  *@s1: string one
  *@s2: string two
  *@n: number of characters
- * Return: diference
+ * Return: difference
  */
 
 size_t _strncmp(char *s1, char *s2, size_t n)
@@ -111,20 +105,3 @@ char *_strcpy(char *dest, char *src)
 	dest[i + 1] = 0;
 	return (dest);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

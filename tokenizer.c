@@ -1,4 +1,5 @@
 #include "shell.h"
+
 /**
  * tokenize - tokenizes a stirng
  * @lineptr: what the user inputed
@@ -7,8 +8,8 @@
 
 char **tokenize(char *lineptr)
 {
-	char **user_command = NULL;
-	char *token = NULL;
+	char **user_commands = NULL;
+	char *tokening = NULL;
 	size_t i = 0;
 	int size = 0;
 
@@ -22,17 +23,17 @@ char **tokenize(char *lineptr)
 	}
 	if ((size + 1) == _strlen(lineptr))
 		return (NULL);
-	user_command = malloc(sizeof(char *) * (size + 2));
-	if (user_command == NULL)
+	user_commands = malloc(sizeof(char *) * (size + 2));
+	if (user_commands == NULL)
 		return (NULL);
 
-	token = strtok(lineptr, " \n\t\r");
+	tokening = strtok(lineptr, " \n\t\r");
 
-	for (i = 0; token != NULL; i++)
+	for (i = 0; tokening != NULL; i++)
 	{
-		user_command[i] = token;
-		token = strtok(NULL, " \n\t\r");
+		user_commands[i] = tokening;
+		tokening = strtok(NULL, " \n\t\r");
 	}
-	user_command[i] = NULL;
-	return (user_command);
+	user_commands[i] = NULL;
+	return (user_commands);
 }

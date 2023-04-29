@@ -1,5 +1,3 @@
-simple shell
-
 - Task 0. Betty would be proud
 - Task 1. Simple shell 0.1
 - Task 2. Simple shell 0.2
