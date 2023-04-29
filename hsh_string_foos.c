@@ -9,8 +9,6 @@
  * Return: Always 0
  */
 
-
-
 char *_strcat(char *dest, char *src)
 {
 	int i, j = 0;
@@ -22,13 +20,10 @@ char *_strcat(char *dest, char *src)
 	{
 		dest[i] = src[j];
 		i++;
-
 	}
 	dest[i] = '\0';
-return (dest);
+	return (dest);
 }
-
-
 
 /**
  * _strcmp - Compares two strings
@@ -47,9 +42,8 @@ int _strcmp(char *s1, char *s2)
 
 	while (s1[i] != 0 && s2[i] != 0 && s1[i] == s2[i])
 		i++;
-val = s1[i] - s2[i];
-return (val);
-
+	val = s1[i] - s2[i];
+	return (val);
 }
 
 /**
@@ -111,20 +105,3 @@ char *_strcpy(char *dest, char *src)
 	dest[i + 1] = 0;
 	return (dest);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
